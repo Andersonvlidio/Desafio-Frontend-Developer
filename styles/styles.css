@@ -1,0 +1,240 @@
+.display-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Menu */
+header {
+  max-width: 1500px;
+  width: 100%;
+  height: 400px;
+  background-color: var(--secoundary-color);
+  padding: 69px 26px 50px 26px;
+  color: var(--primary-color);
+}
+header span {
+  font-size: 20px;
+}
+header h1 {
+  font-size: 40px;
+  margin: 0 0 12px 0;
+}
+header p {
+  font-size: 14px;
+  margin: 12px 0 50px 0;
+}
+.menu {
+  max-width: 769px;
+  width: 100%;
+}
+.menu ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu ul li a {
+  display: block;
+  padding: 12px 31px;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+  border: 1px solid var(--secoundary-color);
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.menu ul li a:hover {
+  background-color: var(--secoundary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* Primeira section, com as informações */
+.info-container {
+  display: flex;
+  width: 100%;
+}
+.info-container .info {
+  width: 55%;
+  margin: 8px 10px;
+  padding: 10px;
+}
+.info-container .info span {
+  font-size: 20px;
+}
+.info-container .info p {
+  font-size: 12px;
+  margin: 40px 0 15px 0;
+}
+.form-info {
+  width: 45%;
+  margin: 8px 10px;
+  padding: 10px;
+}
+.form-info form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-info form label {
+  margin: 10px 0;
+  font-size: 12px;
+}
+.form-info form input {
+  width: 100%;
+  padding: 6px;
+  margin: 3px 0;
+  border: 1px solid var(--secoundary-color);
+}
+.form-info .radio-container {
+  display: flex;
+}
+.form-info .radio-container label {
+  margin-right: 20px;
+  align-items: center;
+}
+.form-info .radio-container label input {
+  width: auto;
+  margin: 0;
+}
+.button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--secoundary-color);
+  border-radius: 4px;
+  padding: 8px;
+  color: var(--third-color);
+  font-size: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px 0;
+}
+.button:hover {
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+/* Divisão */
+.division-one hr {
+  width: 100%;
+  overflow: visible;
+  color: var(--third-color);
+  text-align: center;
+  margin: 50px 0;
+}
+.division-one hr::after {
+  content: "Sua seleção especial";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 18px;
+  padding: 0 0.3em;
+  background: white;
+}
+/* Cards */
+.container-cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-cards .card {
+  min-width: 200px;
+  width: 24%;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container-cards .card .container-img {
+  border: 1px solid var(--third-color);
+  width: 100%;
+  height: 150px;
+  padding: 6px;
+}
+.container-cards .card .container-img img {
+  width: 100%;
+  height: 100%;
+}
+.container-cards .card h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 14px 0 10px 0;
+}
+.container-cards .card p {
+  font-size: 12px;
+}
+.container-cards .card span {
+  font-size: 12px;
+  margin: 8px 0 6px 0;
+}
+.container-cards .card span:nth-last-child(3) {
+  font-size: 16px;
+  font-weight: 700;
+}
+.container-cards .card button {
+  padding: 6px 68px;
+}
+/* divisão 2 */
+.division-two hr {
+  width: 100%;
+  overflow: visible;
+  color: var(--third-color);
+  text-align: center;
+  margin-top: 180px;
+}
+.division-two hr::after {
+  content: "Sua seleção especial";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 18px;
+  padding: 0 0.3em;
+  background: white;
+}
+/* Formulário para convidar amigo */
+.invite-container {
+  color: var(--third-color);
+  margin: 40px 0 71px 0;
+  width: 100%;
+}
+.invite-container p {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+}
+.invite-container form {
+  margin-top: 19px;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.invite-container form label {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 20px;
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+.invite-container form label input {
+  border: 1px solid var(--third-color);
+  width: 100%;
+  padding: 6px;
+  margin-top: 6px;
+}
+.invite-container form button {
+  padding: 11px 85px;
+  margin-top: 25px;
+}
+
+footer {
+  background-color: var(--secoundary-color);
+  max-width: 1500px;
+  width: 100%;
+  height: 293px;
+  padding: 70px 0;
+  color: var(--primary-color);
+}
+footer p {
+  font-size: 12px;
+}
