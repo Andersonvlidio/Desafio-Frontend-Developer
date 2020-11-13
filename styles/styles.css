@@ -35,9 +35,12 @@ header p {
   flex-wrap: wrap;
 }
 .menu ul li a {
-  display: block;
-  padding: 12px 31px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-size: 14px;
+  width: 160px;
+  height: 40px;
   background-color: var(--primary-color);
   color: var(--third-color);
   border: 1px solid var(--secoundary-color);
@@ -108,11 +111,18 @@ header p {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px 0;
+  text-align: center;
 }
 .button:hover {
   background-color: var(--third-color);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+.btn {
+  max-width: 200px;
+  width: 100%;
+  height: 30px;
+  padding: 0;
 }
 /* Divisão */
 .row {
@@ -121,13 +131,14 @@ header p {
   margin: 30px 0;
 }
 .row span {
-  width: 40%;
+  width: 36%;
   height: 1px;
   background-color: var(--secoundary-color);
 }
 .row p {
   color: var(--secoundary-color);
   margin: 0 5px;
+  font-size: 18px;
 }
 .p-70 {
   padding-top: 70px;
@@ -172,9 +183,7 @@ header p {
   font-size: 16px;
   font-weight: 700;
 }
-.container-cards .card button {
-  padding: 6px 68px;
-}
+
 /* Formulário para convidar amigo */
 .invite-container {
   color: var(--third-color);
@@ -184,6 +193,7 @@ header p {
 .invite-container p {
   margin: 0 0 20px 0;
   font-size: 14px;
+  text-align: center;
 }
 .invite-container form {
   margin-top: 19px;
@@ -221,4 +231,83 @@ footer {
 }
 footer p {
   font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 425px) {
+  header .display-center {
+    align-items: flex-start;
+  }
+  .menu ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .menu ul li {
+    margin: 5px 8px;
+  }
+  .info-container {
+    display: block;
+  }
+  .info-container .info {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .form-info {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .row span {
+    width: 26%;
+    height: 1px;
+    background-color: var(--secoundary-color);
+  }
+  .row {
+    margin: 70px 0 30px;
+  }
+  .container-cards .card {
+    min-width: 200px;
+    width: 100%;
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-cards .card .container-img {
+    border: 1px solid var(--third-color);
+    width: 50%;
+    height: 150px;
+    padding: 6px;
+    margin: 5px;
+  }
+  .container-price {
+    width: 50%;
+    margin: 5px;
+  }
+  .container-cards .container-price h4 {
+    margin: 0 0 14px;
+  }
+  .container-cards .container-price p {
+    margin: 5px;
+  }
+  .invite-container {
+    padding: 10px;
+  }
+  .invite-container form {
+    margin-top: 19px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .invite-container form label {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 12px;
+  }
 }
