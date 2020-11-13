@@ -57,7 +57,7 @@ header p {
 }
 .info-container .info {
   width: 55%;
-  margin: 8px 10px;
+  margin: 15px 10px;
   padding: 10px;
 }
 .info-container .info span {
@@ -115,21 +115,22 @@ header p {
   border: 1px solid var(--primary-color);
 }
 /* Divisão */
-.division-one hr {
-  width: 100%;
-  overflow: visible;
-  color: var(--third-color);
-  text-align: center;
-  margin: 50px 0;
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
 }
-.division-one hr::after {
-  content: "Sua seleção especial";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 18px;
-  padding: 0 0.3em;
-  background: white;
+.row span {
+  width: 40%;
+  height: 1px;
+  background-color: var(--secoundary-color);
+}
+.row p {
+  color: var(--secoundary-color);
+  margin: 0 5px;
+}
+.p-70 {
+  padding-top: 70px;
 }
 /* Cards */
 .container-cards {
@@ -173,23 +174,6 @@ header p {
 }
 .container-cards .card button {
   padding: 6px 68px;
-}
-/* divisão 2 */
-.division-two hr {
-  width: 100%;
-  overflow: visible;
-  color: var(--third-color);
-  text-align: center;
-  margin-top: 180px;
-}
-.division-two hr::after {
-  content: "Sua seleção especial";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 18px;
-  padding: 0 0.3em;
-  background: white;
 }
 /* Formulário para convidar amigo */
 .invite-container {
