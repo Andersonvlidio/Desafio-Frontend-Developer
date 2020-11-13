@@ -18,12 +18,14 @@ function renderProducts(products) {
                                         <div class="container-img">
                                             <img src="${image}" alt="Imagem do produto ${name}" title="${name}" >
                                         </div>
-                                        <h4>${name}</h4>
-                                        <p>${description}</p>
-                                        <span>De: R$${oldPrice},00</span>
-                                        <span>Por: R$${price},00</span>
-                                        <span>ou ${installments.count}x de R$${valueReplaced}</span>
-                                        <button class="button">comprar</button>
+                                        <div class="container-price">
+                                          <h4>${name}</h4>
+                                          <p>${description}</p>
+                                          <span>De: R$${oldPrice},00</span>
+                                          <span>Por: R$${price},00</span>
+                                          <span>ou ${installments.count}x de R$${valueReplaced}</span>
+                                          <button class="button btn">comprar</button>
+                                        </div>  
                                     </div>`;
   });
 }
