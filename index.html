@@ -24,6 +24,7 @@
         </nav>
     </header>
     <main>
+
         <!-- Informações -->
         <section class="info-container">
             <div class="info">
@@ -47,33 +48,34 @@
                 </p>
             </div>
             <div class="form-info">
-                <form action="">
+                <form id="form-register">
                     <label for="name">
                         Seu nome: <br/>
-                        <input name="name" type="text" required>
+                        <input id="register-name-field" name="name" type="text" required>
                     </label>
                     <label for="email">
                         E-mail: <br/>
-                        <input name="email" type="email" required>
+                        <input id="register-email-field" name="email" type="email" required>
                     </label>
                     <label for="cpf">
                         CPF: <br/>
-                        <input name="cpf" type="number" required>
+                        <input id="register-cpf-field" name="cpf" type="number"  required>
                     </label>
-                    <div class="radio-container">
+                    <div class="radio-container" >
                         <label for="Masculino">
-                            <input name="Masculino" type="radio" required>
+                            <input name="sexo" value="masculino" type="radio" required>
                             Masculino
                         </label>
                         <label for="Feminino">
-                            <input name="Feminino" type="radio" required>
+                            <input name="sexo" value="feminino" type="radio" required>
                             Feminino
                         </label>
                     </div>
-                    <button type="submit" class="button">Enviar</button>
+                    <button type="submit" class="button" >Enviar</button>
                 </form>
             </div>
         </section>   
+
             <!-- Divisão -->
             <div class="row display-center">
                 <span class="risco"></span>
@@ -88,6 +90,7 @@
                 </div>
                 <input type="button" value="Ainda mais produtos aqui!" class="button"id="loadProducts"> 
             </section>
+
             <!-- Divisão -->
             <div class="row display-center p-70">
                 <span class="risco"></span>
@@ -98,14 +101,14 @@
             <!-- Formulário para convidar amigo -->
         <section class="display-center invite-container" >
             <p>Quer que seus amigos também ganhem a lista personalizade deles? Preencha agora!</p>
-            <form action="enviar convite a amigo">
+            <form id="form-invite">
                 <label for="name">
                     Nome do seu amigo:
-                    <input name="name" type="text" required>
+                    <input id="invit-name-field" name="name" type="text" required>
                 </label>
                 <label for="email">
                     E-mail:
-                    <input name="email" type="email" required>
+                    <input id="invit-email-field" name="email" type="email" required>
                 </label>
                 <button type="submit" class="button">Enviar agora</button>
             </form>

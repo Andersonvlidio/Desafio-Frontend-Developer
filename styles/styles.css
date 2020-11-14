@@ -12,6 +12,17 @@ header {
   background-color: var(--secoundary-color);
   padding: 69px 26px 50px 26px;
   color: var(--primary-color);
+  position: relative;
+}
+header::after{
+  content: "";
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+  left: 0;
+  background-color:var(--primary-color);
+  height: 50px;
+  clip-path: polygon(0 2%, 0% 100%, 100% 100%)
 }
 header span {
   font-size: 20px;
