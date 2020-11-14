@@ -36,6 +36,7 @@ header p {
 }
 .menu ul li a {
   display: flex;
+  padding: 9px;
   justify-content: center;
   text-align: center;
   font-size: 14px;
