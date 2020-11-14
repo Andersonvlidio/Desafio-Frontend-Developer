@@ -311,3 +311,58 @@ footer p {
     font-size: 12px;
   }
 }
+@media (max-width: 375px) {
+  .menu ul li {
+    margin: 3px 5px;
+  }
+  .menu ul li a {
+    width: 150px;
+    height: 40px;
+  }
+  .row span {
+    width: 20%;
+  }
+  .container-price {
+    width: 50%;
+    margin: 5px;
+    font
+  }
+  .container-cards .container-price h4 {
+    margin: 0 0 8px;
+    font-size: 13px;
+  }
+  .container-cards .container-price p {
+    margin: 3px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 320px) {
+  .menu ul li {
+    margin: 3px 3px;
+  }
+  .menu ul li a {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+  }
+  .row span {
+    width: 20%;
+  }
+  .container-price {
+    width: 50%;
+    margin: 5px;
+  }
+  .container-cards .container-price h4 {
+    margin: 0 0 8px;
+    font-size: 13px;
+  }
+  .container-cards .container-price p {
+    margin: 3px;
+    font-size: 10px;
+  }
+  .row span {
+    width: 18%;
+  }
+}
