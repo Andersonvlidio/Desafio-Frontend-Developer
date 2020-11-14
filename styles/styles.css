@@ -10,7 +10,7 @@ header {
   width: 100%;
   height: 400px;
   background-color: var(--secoundary-color);
-  padding: 69px 26px 50px 26px;
+  padding: 0 26px 50px 26px;
   color: var(--primary-color);
   position: relative;
 }
@@ -21,8 +21,8 @@ header::after{
   position: absolute;
   left: 0;
   background-color:var(--primary-color);
-  height: 50px;
-  clip-path: polygon(0 2%, 0% 100%, 100% 100%)
+  height: 130px;
+  clip-path: polygon(0 0%, 0% 100%, 100% 100%)
 }
 header span {
   font-size: 20px;
@@ -44,6 +44,8 @@ header p {
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 }
 .menu ul li a {
   display: flex;
@@ -240,13 +242,24 @@ footer {
   height: 293px;
   padding: 70px 0;
   color: var(--primary-color);
+  position: relative;
+}
+footer::after{
+  content: "";
+  width: 100%;
+  top: 0px;
+  position: absolute;
+  left: 0;
+  background-color: var(--primary-color);
+  height: 130px;
+  clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
 }
 footer p {
   font-size: 12px;
 }
 
 /* Responsividade */
-@media (max-width: 425px) {
+@media screen and (max-width: 415px) {
   header .display-center {
     align-items: flex-start;
   }
@@ -323,7 +336,7 @@ footer p {
     font-size: 12px;
   }
 }
-@media (max-width: 375px) {
+@media screen and (max-width: 406px) {
   .menu ul li {
     margin: 3px 5px;
   }
@@ -348,7 +361,7 @@ footer p {
     font-size: 11px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px ) and (max-width: 372px ){
   .menu ul li {
     margin: 3px 3px;
   }
