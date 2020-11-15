@@ -58,7 +58,7 @@ o deploy foi feito através do site netifly.
 
 ## Agradecimento
 
-Muito obrigado pela oportunidade de participar desse desafio, foi muito legal bom. Espero que o resultado seja satisfatório.
+Muito obrigado pela oportunidade de participar desse desafio, foi muito legal. Espero que o resultado seja satisfatório.
 
 ## Author
 
