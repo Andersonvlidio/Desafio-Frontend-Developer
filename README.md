@@ -48,6 +48,10 @@ O HTML tenta ser o bem semantico, com comentários curtos para localizar dentro 
 
 - 2 funções gerais, que chamam as outras 3. Uma para cadastrar usuário, e outra para enviar convite a amigo.
 
+## Layout para e-mail
+
+- Esse layout encontrei um pocuo de dificuldade para fazer, pois nunca tinha feito antes. O layout foi construído da melhor forma possivel que eu conseguiria com as informações que tinha, e com as limitações que essa tela tem que ter para se redenrizar.
+
 ## Deploy
 
 o deploy foi feito através do site netifly.
